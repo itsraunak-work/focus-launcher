@@ -35,9 +35,9 @@ No icons. No badges. No distractions. Just your apps, a search bar, and your int
 
 ## 📸 Screenshots
 
-| Home Screen | App Drawer | Search |
+| Home Screen |  Monitoring | Day Tracker  |
 |:-----------:|:----------:|:------:|
-| ![Home](docs/home.png) | ![Drawer](docs/drawer.png) | ![Search](docs/search.png) |
+| ![Home](home.jpg) | ![Drawer](drawer.jpg) | ![Search](search.jpg) |
 
 ---
 
