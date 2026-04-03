@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="28dp"
+        android:paddingEnd="28dp"
+        android:paddingBottom="48dp">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="52dp"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:id="@+id/tvSettingsBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="←"
+                android:textColor="#444444"
+                android:textSize="22sp"
+                android:paddingEnd="16dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="settings"
+                android:textColor="#FFFFFF"
+                android:textSize="36sp"
+                android:fontFamily="sans-serif-thin"/>
+        </LinearLayout>
+
+        <!-- Section: Appearance -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="appearance" android:textColor="#2E2E2E" android:textSize="11sp"
+            android:letterSpacing="0.12" android:layout_marginTop="28dp" android:layout_marginBottom="8dp"
+            android:fontFamily="sans-serif-light"/>
+
+        <!-- Font -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:gravity="center_vertical" android:paddingTop="14dp" android:paddingBottom="14dp">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                android:text="font" android:textColor="#AAAAAA" android:textSize="16sp" android:fontFamily="sans-serif-light"/>
+            <TextView android:id="@+id/tvFontValue" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="sans forgetica" android:textColor="#444444" android:textSize="14sp" android:fontFamily="sans-serif-light"/>
+        </LinearLayout>
+
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#0D0D0D"/>
+
+        <!-- Text size -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:gravity="center_vertical" android:paddingTop="14dp" android:paddingBottom="14dp">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                android:text="text size" android:textColor="#AAAAAA" android:textSize="16sp" android:fontFamily="sans-serif-light"/>
+            <TextView android:id="@+id/tvTextSizeValue" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="medium" android:textColor="#444444" android:textSize="14sp" android:fontFamily="sans-serif-light"/>
+        </LinearLayout>
+
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#0D0D0D"/>
+
+        <!-- Clock format -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:gravity="center_vertical" android:paddingTop="14dp" android:paddingBottom="14dp">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                android:text="clock format" android:textColor="#AAAAAA" android:textSize="16sp" android:fontFamily="sans-serif-light"/>
+            <TextView android:id="@+id/tvClockFormat" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="24h" android:textColor="#444444" android:textSize="14sp" android:fontFamily="sans-serif-light"/>
+        </LinearLayout>
+
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#0D0D0D"/>
+
+        <!-- App sort order -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:gravity="center_vertical" android:paddingTop="14dp" android:paddingBottom="14dp">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                android:text="sort apps" android:textColor="#AAAAAA" android:textSize="16sp" android:fontFamily="sans-serif-light"/>
+            <TextView android:id="@+id/tvSortOrder" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="A → Z" android:textColor="#444444" android:textSize="14sp" android:fontFamily="sans-serif-light"/>
+        </LinearLayout>
+
+        <!-- Section: Focus -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="focus" android:textColor="#2E2E2E" android:textSize="11sp"
+            android:letterSpacing="0.12" android:layout_marginTop="32dp" android:layout_marginBottom="8dp"
+            android:fontFamily="sans-serif-light"/>
+
+        <!-- Grayscale toggle -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:gravity="center_vertical" android:paddingTop="14dp" android:paddingBottom="14dp">
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="grayscale on social apps" android:textColor="#AAAAAA" android:textSize="16sp" android:fontFamily="sans-serif-light"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="requires accessibility permission" android:textColor="#222222"
+                    android:textSize="11sp" android:fontFamily="sans-serif-light" android:layout_marginTop="2dp"/>
+            </LinearLayout>
+            <TextView android:id="@+id/tvGrayscaleToggle"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="○" android:textColor="#333333" android:textSize="22sp"/>
+        </LinearLayout>
+
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#0D0D0D"/>
+
+        <!-- Enable accessibility -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:gravity="center_vertical" android:paddingTop="14dp" android:paddingBottom="14dp">
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="enable accessibility service" android:textColor="#AAAAAA" android:textSize="16sp" android:fontFamily="sans-serif-light"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="needed for grayscale mode" android:textColor="#222222"
+                    android:textSize="11sp" android:fontFamily="sans-serif-light" android:layout_marginTop="2dp"/>
+            </LinearLayout>
+            <TextView android:id="@+id/tvAccessibilityBtn"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="open →" android:textColor="#333333" android:textSize="13sp" android:fontFamily="sans-serif-light"/>
+        </LinearLayout>
+
+        <!-- Section: About -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="about" android:textColor="#2E2E2E" android:textSize="11sp"
+            android:letterSpacing="0.12" android:layout_marginTop="32dp" android:layout_marginBottom="8dp"
+            android:fontFamily="sans-serif-light"/>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:gravity="center_vertical" android:paddingTop="14dp" android:paddingBottom="14dp">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                android:text="version" android:textColor="#AAAAAA" android:textSize="16sp" android:fontFamily="sans-serif-light"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="1.0.0" android:textColor="#222222" android:textSize="14sp" android:fontFamily="sans-serif-light"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000"
+    android:paddingStart="28dp"
+    android:paddingEnd="28dp">
+
+    <!-- Large thin clock -->
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00"
+        android:textColor="#FFFFFF"
+        android:textSize="64sp"
+        android:fontFamily="sans-serif-thin"
+        android:layout_marginTop="52dp"/>
+
+    <!-- Muted date below clock -->
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="wednesday, 25 march"
+        android:textColor="#555555"
+        android:textSize="13sp"
+        android:letterSpacing="0.06"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="28dp"/>
+
+    <!-- Search bar -->
+    <EditText
+        android:id="@+id/etSearch"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@drawable/search_background"
+        android:hint="search apps..."
+        android:textColorHint="#3A3A3A"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:fontFamily="sans-serif-light"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:singleLine="true"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Thin divider -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#111111"
+        android:layout_marginBottom="4dp"/>
+
+    <!-- App list -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none"
+        android:overScrollMode="never"/>
+
+    <!-- Bottom bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tvBlock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="block apps"
+            android:textColor="#3A3A3A"
+            android:textSize="12sp"
+            android:letterSpacing="0.08"
+            android:fontFamily="sans-serif-light"/>
+
+        <View android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/tvSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="settings"
+            android:textColor="#2A2A2A"
+            android:textSize="12sp"
+            android:fontFamily="sans-serif-light"
+            android:letterSpacing="0.08"/>
+
+        <TextView
+            android:id="@+id/tvLockBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="year"
+            android:textColor="#3A3A3A"
+            android:textSize="12sp"
+            android:fontFamily="sans-serif-light"
+            android:letterSpacing="0.08"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000"
+    android:paddingStart="28dp"
+    android:paddingEnd="28dp">
+
+    <!-- Header -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="today"
+        android:textColor="#FFFFFF"
+        android:textSize="52sp"
+        android:fontFamily="sans-serif-thin"
+        android:layout_marginTop="64dp"/>
+
+    <TextView
+        android:id="@+id/tvTodoDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="wednesday"
+        android:textColor="#444444"
+        android:textSize="13sp"
+        android:letterSpacing="0.06"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="36dp"/>
+
+    <!-- Add task row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="12dp">
+
+        <EditText
+            android:id="@+id/etNewTask"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="add a task..."
+            android:textColorHint="#2E2E2E"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-light"
+            android:background="@null"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:singleLine="true"/>
+
+        <TextView
+            android:id="@+id/tvAddTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textColor="#555555"
+            android:textSize="28sp"
+            android:paddingStart="16dp"
+            android:paddingBottom="4dp"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#111111"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Task list -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewTasks"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none"
+        android:overScrollMode="never"/>
+
+    <!-- Swipe hint -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:text="apps →"
+        android:textColor="#2A2A2A"
+        android:textSize="12sp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center_vertical|end"/>
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000"
+    android:paddingStart="24dp"
+    android:paddingEnd="24dp"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:id="@+id/tvLockTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00"
+        android:textColor="#FFFFFF"
+        android:textSize="80sp"
+        android:fontFamily="sans-serif-thin"
+        android:layout_marginTop="52dp"/>
+
+    <TextView
+        android:id="@+id/tvLockDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="wednesday, 25 march"
+        android:textColor="#444444"
+        android:textSize="14sp"
+        android:letterSpacing="0.05"/>
+
+    <!-- Days remaining label -->
+    <TextView
+        android:id="@+id/tvDaysRemaining"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="243 days left in 2026"
+        android:textColor="#333333"
+        android:textSize="12sp"
+        android:fontFamily="sans-serif-light"
+        android:letterSpacing="0.1"
+        android:layout_marginTop="36dp"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Water droplets custom view -->
+    <com.focuslauncher.app.DayDropletView
+        android:id="@+id/dropletView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <!-- Swipe hint at bottom -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="swipe up to open"
+        android:textColor="#2A2A2A"
+        android:textSize="12sp"
+        android:fontFamily="sans-serif-light"
+        android:letterSpacing="0.12"
+        android:layout_marginBottom="44dp"/>
+
+</LinearLayout>

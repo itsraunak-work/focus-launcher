@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.FocusLauncher" parent="Theme.AppCompat.NoActionBar">
+        <!-- Background is pure black -->
+        <item name="android:windowBackground">#000000</item>
+        <!-- Status bar (top bar with time/battery) is black -->
+        <item name="android:statusBarColor">#000000</item>
+        <!-- Navigation bar (bottom buttons) is black -->
+        <item name="android:navigationBarColor">#000000</item>
+        <!-- Text on status bar is white (light = white icons) -->
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+        <!-- Ripple effect when tapping is dark gray -->
+        <item name="colorControlHighlight">#333333</item>
+        <!-- No action bar / title bar at top -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+</resources>

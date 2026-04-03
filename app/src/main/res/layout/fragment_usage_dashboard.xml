@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000"
+    android:paddingStart="28dp"
+    android:paddingEnd="28dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="today"
+        android:textColor="#FFFFFF"
+        android:textSize="44sp"
+        android:fontFamily="sans-serif-thin"
+        android:layout_marginTop="56dp"/>
+
+    <!-- Total screen time -->
+    <TextView
+        android:id="@+id/tvTotalScreenTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="screen time: —"
+        android:textColor="#2E2E2E"
+        android:textSize="13sp"
+        android:fontFamily="sans-serif-light"
+        android:letterSpacing="0.06"
+        android:layout_marginTop="4dp"/>
+
+    <!-- Unlock count -->
+    <TextView
+        android:id="@+id/tvUnlockCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="unlocks: —"
+        android:textColor="#1E1E1E"
+        android:textSize="13sp"
+        android:fontFamily="sans-serif-light"
+        android:letterSpacing="0.06"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="28dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#0D0D0D"
+        android:layout_marginBottom="8dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewUsage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:overScrollMode="never"/>
+
+</LinearLayout>

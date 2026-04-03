@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">FocusLauncher</string>
+    <string name="accessibility_description">FocusLauncher uses accessibility to detect social media apps and apply grayscale mode automatically.</string>
+</resources>

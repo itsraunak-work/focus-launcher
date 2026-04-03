@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000"
+    android:gravity="center_horizontal"
+    android:paddingStart="32dp"
+    android:paddingEnd="32dp">
+
+    <!-- Small top bar -->
+    <View
+        android:layout_width="40dp"
+        android:layout_height="2dp"
+        android:background="#1A1A1A"
+        android:layout_marginTop="20dp"/>
+
+    <!-- App name -->
+    <TextView
+        android:id="@+id/tvOverlayAppName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Instagram"
+        android:textColor="#FFFFFF"
+        android:textSize="32sp"
+        android:fontFamily="sans-serif-thin"
+        android:letterSpacing="0.04"
+        android:layout_marginTop="44dp"/>
+
+    <!-- Message -->
+    <TextView
+        android:id="@+id/tvOverlayMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="You've been scrolling for more than 10 minutes."
+        android:textColor="#333333"
+        android:textSize="14sp"
+        android:fontFamily="sans-serif-light"
+        android:textAlignment="center"
+        android:lineSpacingExtra="6dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="48dp"/>
+
+    <!-- Circular clock timer -->
+    <com.focuslauncher.app.ClockProgressView
+        android:id="@+id/clockProgressView"
+        android:layout_width="180dp"
+        android:layout_height="180dp"/>
+
+    <!-- Breathing text below clock -->
+    <TextView
+        android:id="@+id/tvBreath"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="breathe"
+        android:textColor="#1E1E1E"
+        android:textSize="13sp"
+        android:fontFamily="sans-serif-light"
+        android:letterSpacing="0.18"
+        android:layout_marginTop="24dp"/>
+
+    <!-- Spacer pushes buttons to bottom -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <!-- "Continue" — only visible for Chrome/YouTube -->
+    <Button
+        android:id="@+id/btnContinueAnyway"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:text="CONTINUE ANYWAY"
+        android:textColor="#2E2E2E"
+        android:backgroundTint="#080808"
+        android:fontFamily="sans-serif-light"
+        android:letterSpacing="0.12"
+        android:textSize="12sp"
+        android:visibility="gone"
+        android:layout_marginBottom="10dp"/>
+
+    <!-- "Close App" — always visible after timer -->
+    <Button
+        android:id="@+id/btnCloseApp"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:text="CLOSE APP"
+        android:textColor="#000000"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="sans-serif-light"
+        android:letterSpacing="0.12"
+        android:textSize="12sp"
+        android:visibility="gone"
+        android:layout_marginBottom="36dp"/>
+
+</LinearLayout>

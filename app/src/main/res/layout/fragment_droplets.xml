@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000"
+    android:paddingStart="24dp"
+    android:paddingEnd="24dp"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="this year"
+        android:textColor="#FFFFFF"
+        android:textSize="44sp"
+        android:fontFamily="sans-serif-thin"
+        android:layout_marginTop="56dp"/>
+
+    <TextView
+        android:id="@+id/tvDropletsDaysLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="243 days remaining"
+        android:textColor="#2E2E2E"
+        android:textSize="13sp"
+        android:fontFamily="sans-serif-light"
+        android:letterSpacing="0.08"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="32dp"/>
+
+    <!-- The year droplets -->
+    <com.focuslauncher.app.DayDropletView
+        android:id="@+id/dropletsView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clickable="true"/>
+
+    <!-- Tap hint -->
+    <TextView
+        android:id="@+id/tvTapHint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tap today's droplet"
+        android:textColor="#1A1A1A"
+        android:textSize="11sp"
+        android:fontFamily="sans-serif-light"
+        android:letterSpacing="0.1"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Hours left — hidden until tap -->
+    <TextView
+        android:id="@+id/tvHoursLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#555555"
+        android:textSize="13sp"
+        android:fontFamily="sans-serif-light"
+        android:letterSpacing="0.06"
+        android:layout_marginBottom="32dp"
+        android:visibility="invisible"/>
+
+</LinearLayout>
